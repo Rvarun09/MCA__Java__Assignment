@@ -1,12 +1,11 @@
 import java.util.Scanner;
 
-public class NumberCheck {
+public class DivisibleBy3And5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        if (n > 0) System.out.println("Positive");
-        else if (n < 0) System.out.println("Negative");
-        else System.out.println("Zero");
+        String result = (n % 3 == 0 && n % 5 == 0) ? "Divisible" : "Not Divisible";
+        System.out.println(result);
         sc.close();
     }
 }
