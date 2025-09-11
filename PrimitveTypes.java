@@ -1,15 +1,15 @@
-class DefaultValues {
-    byte b;
-    short s;
-    int i;
-    long l;
-    float f;
-    double d;
-    char c;
-    boolean bool;
+class PrimitiveTypes {
+    byte b = 10;
+    short s = 20;
+    int i = 30;
+    long l = 40L;
+    float f = 3.14f;
+    double d = 99.99;
+    char c = 'A';
+    boolean bool = true;
 
     public static void main(String[] args) {
-        DefaultValues obj = new DefaultValues();
+        PrimitiveTypes obj = new PrimitiveTypes();
         System.out.println(obj.b);
         System.out.println(obj.s);
         System.out.println(obj.i);
